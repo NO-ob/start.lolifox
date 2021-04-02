@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Start</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" href="css/style.css">
+<script src="scripts/script.js"></script> 
+
+</head>
+<body onload="checkClient()">
+<div style="font-size: 8pt; position: fixed; top: 6px; right: 10px; color: darkred;"><b>Info:</b> Click on the chevron to select a different searchengine.</div>
+<div align="center">
+<div id="info" style="visibility: hidden"><a href="/download">&raquo; lolifox version 0.2.4 is out, please update &laquo;</a></div>
+<div id="box">
+<div style="text-align: left; padding: 30px 0px 40px 48px"><img src="images/start.png" /></div>
+<input id="query" type="text" style="width: 300px;" title="Enter searchquery here." onkeypress="if(event.keyCode == 13) do_search()" />
+<img alt="Search" title="Start searching" src="images/google.png" align="top" id="searchprovider" style="border: 1px solid #999; border-right: 0px; cursor: pointer;" onclick="do_search()" /><img id="chevron" alt="v" title="Select Engine" src="images/chevron.png" align="top" style="border: 1px solid #999; cursor: pointer" onclick="(getElementById('menu1').style.visibility == 'visible') ? hidemenu() : showmenu()" /></div></div>
+<div style="font-size: 8pt; text-align: center; color: #555">
+	- <a href="https://web.archive.org/web/20070207231015/http://lolifox.com/" title="Go to the homepage.">lolifox home</a> -
+</div>
+
+<!-- menus -->
+<div id="menu1" class="menu">
+	<script type="text/javascript">constructmenu(1);</script>
+</div>
+<div id="menu2" class="menu">
+	<script type="text/javascript">constructmenu(2);</script>
+	<hr />
+	<script type="text/javascript">constructmenu(3);</script>
+</div>
+<!-- /menus -->
+
+</body>
+</html>

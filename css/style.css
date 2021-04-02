@@ -1,0 +1,77 @@
+body {
+	background: url(../images/bg.png) repeat-x;
+	font: 9pt Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+#info {
+	display: block;
+	width: 530px;
+	text-align: center;
+	border: 12px solid #f3f3f3;
+	background-color: #f9f9f9;
+	border-radius: 32px;
+	padding: 10px;
+	margin-top: 40px;
+	margin-bottom: -8%;
+}
+#box {
+	margin-top: 12%;
+	margin-bottom: 30px;
+	display: block;
+	width: 530px;
+	height: 230px;
+	text-align: center;
+	border: 12px solid #f3f3f3;
+	background: url(../images/bg2.png) no-repeat;
+	background-position: 50px;
+	background-color: #f9f9f9;
+	border-radius: 32px;
+	padding: 10px;
+}
+input[type=text] {
+	opacity: 0.5;
+	background-color: #eee;
+	border: 1px solid #999;
+	padding: 2px;
+}
+input[type=text]:focus {
+	opacity: 0.8;
+	background: #fff;
+}
+#searchprovider, #chevron {
+	opacity: 0.8;
+}
+.menu {
+	opacity: 0.8;
+	text-align: left;
+	display: block;
+	position: absolute;
+	visibility: hidden;
+	border: 1px solid #999;
+	width: 116px; !important
+}
+.menu > span {
+	padding: 4px;
+	font-size: 9pt;
+	display: block;
+	background-color: #eee;
+}
+.menu > span[onclick] {
+	cursor: pointer;
+}
+.menu > span[onclick]:hover {
+	background-color: #ddd;
+}
+.menu > hr {
+	border: 0;
+	height: 0px;
+	border-bottom: 1px solid #999;
+	margin: 0px;
+}
+a, a:visited {
+	color: #d40;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: underline;
+}
